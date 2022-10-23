@@ -3,6 +3,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  width: 100%;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -27,9 +28,10 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
+  width: auto;
 }
 
 h1 {
