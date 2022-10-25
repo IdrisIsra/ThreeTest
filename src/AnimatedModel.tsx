@@ -42,7 +42,6 @@ export function AnimatedModel(props: JSX.IntrinsicElements["group"]) {
   const { scene, nodes, materials, animations } = useGLTF(
     "/animatedAvatar.glb"
   ) as unknown as GLTFResult;
-  const { actions } = useAnimations(animations, groupRef);
 
   let mixer = new THREE.AnimationMixer(scene);
   animations.forEach((clip) => {
