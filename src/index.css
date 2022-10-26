@@ -4,6 +4,10 @@
   line-height: 24px;
   font-weight: 400;
 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -68,4 +72,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.scrollArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
