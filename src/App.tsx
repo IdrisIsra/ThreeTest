@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import React, { createRef, Suspense, useEffect, useRef, useState } from "react";
 import { Canvas, useFrame, ThreeElements } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Environment, OrbitControls, Loader } from "@react-three/drei";
 import { Model } from "./Model";
 import { AnimatedModel } from "./AnimatedModel";
 import "./index.css";
@@ -29,6 +29,7 @@ function App() {
       <div ref={scrollArea} onScroll={onScroll} className="scrollArea">
         <div style={{ height: `300vh` }} />
       </div>
+      <Loader />
     </div>
   );
 }
