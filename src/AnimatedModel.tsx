@@ -58,8 +58,6 @@ export function AnimatedModel(props: TScrollModel) {
   const clips = animations;
   mixer.clipAction(clips[0]).play();
 
-  useEffect(() => {});
-
   useFrame((t, dt) => {
     console.log(props.top);
     if (props.top.current) mixer.setTime(props.top.current / 1000);
